@@ -26,16 +26,16 @@ const ShoppingCart = () => {
   };
   return (
     <div>
-      <h2>Carrito de compras</h2>
-      <h3>Productos</h3>
+      <h2>Shopping cart</h2>
+      <h3>Products</h3>
       <article className="box grid-responsive">
         {products.map((product) => (
           <ProductItem key={product.id} data={product} addToCart={addToCart} />
         ))}
       </article>
-      <h3>Carrito</h3>
+      <h3>Cart</h3>
       <article className="box">
-        <button onClick={clearCart}>Limpiar carrito</button>
+        <button onClick={clearCart}>Clean shopping cart</button>
         {cart.map((item, index) => (
           <CartItem key={index} data={item} delFromCart={delFromCart} />
         ))}

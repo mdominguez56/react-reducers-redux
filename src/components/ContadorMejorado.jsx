@@ -13,22 +13,22 @@ const ContadorMejorado = () => {
     contadorInit
   );
 
-  const sumar = () => dispatch({ type: TYPES.INCREMENT, payload: 1 });
-  const sumar5 = () => dispatch({ type: TYPES.INCREMENT, payload: 5 });
-  const restar = () => dispatch({ type: TYPES.DECREMENT, payload: 1 });
-  const restar5 = () => dispatch({ type: TYPES.DECREMENT, payload: 5 });
+  const add = () => dispatch({ type: TYPES.INCREMENT, payload: 1 });
+  const add5 = () => dispatch({ type: TYPES.INCREMENT, payload: 5 });
+  const subtract = () => dispatch({ type: TYPES.DECREMENT, payload: 1 });
+  const subtract5 = () => dispatch({ type: TYPES.DECREMENT, payload: 5 });
   const reset = () => dispatch({ type: TYPES.RESET });
   return (
     <div style={{ textAlign: "center" }}>
-      <h2>Contador Mejorado Reducer</h2>
+      <h2>Improved counter Reducer</h2>
       <nav>
-        <button onClick={sumar}>+</button>
-        <button onClick={sumar5}>+5</button>
-        <button onClick={restar}>-</button>
-        <button onClick={restar5}>-5</button>
+        <button onClick={add}>+1</button>
+        <button onClick={add5}>+5</button>
+        <button onClick={subtract}>-1</button>
+        <button onClick={subtract5}>-5</button>
         <button onClick={reset}>0</button>
       </nav>
-      <h3>{state.contador}</h3>
+      <h3>{state.count}</h3>
     </div>
   );
 };

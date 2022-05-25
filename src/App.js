@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <hr />
-      <h1>useReducer</h1>
+      <h1>Usage examples of useReducer Hooks</h1>
       <Contador />
       <hr />
       <ContadorMejorado />
